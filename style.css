@@ -194,6 +194,18 @@ section.about{
     transition: .5s;
 }
 
+.skills__box ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.skills__img{
+    width: 30px;
+    height: 30px;
+}
+
 
 
 /*Sección Hobbies*/
@@ -234,6 +246,18 @@ section.hobbies{
     width: 170px;
     height: 170px;
     transition: .5s;
+}
+
+.hobbies__box ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.hobbies__img{
+    width: 30px;
+    height: 30px;
 }
 
 
