@@ -1,46 +1,22 @@
-/*CSS Reset / Normalize*/
-/* Hemos disponibilizado el básico de reset de estilos. Si quieren, añadan más informaciones 
-en las secciones señaladas */
-/*Já deixaremos o básico de reset de estilos. Caso queira adicionar mais informações
-coloque nas sessões indicadas*/
-
-:root{
-    /* Inserta la variable de los otros colores inspeccionando el exemplo de figma */
-    /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
-   --cor-de-fundo: #F5F5F5;
-   --cor-de-link: #000;
-}
 
 body {
     box-sizing: border-box;
-    background-color: var(--cor-de-fundo) ;
     font-family: 'Raleway';
     margin: 0;
     padding: 0;
     line-height: 1;
-    /* padding: 20px 50px 0 50px; */
-    background-color: #afeeee;
-    
+    background-color: #afeeee; 
 }
+
 ol, ul,li {
     list-style: none;
 }
+
 a{
     text-decoration: none;
-    color: var(--cor-de-link);
+    color: #5086c1;
 }
 
-/*En este desafío nosostros gustaríamos que ustedes intentaran utilizar la metodología BEM. 
-
-Lo que es el BEM?
-
-BEM (Bloque, Elemento, Modificador) es un enfoque basado en componentes para el 
-desarrollo web. La idea detrás de esto es dividir la interfaz de usuario en bloques
-independientes. Esto hace que el desarrollo de la interfaz sea fácil y rápido, incluso
-con una interfaz de usuario compleja, y permite la reutilización del código existente sin copiar y pegar.
-
-Enlace de la documentación oficial!
-https://en.bem.info/methodology/quick-start/*/
 
 /*Sección Menu*/
 
@@ -116,14 +92,23 @@ section.title{
 }
 
 .title__network{
+    display: flex;
+    align-items: center;
+    gap: 20px;
     font-size: 20px;
     margin: 10px 0;
 }
 
-
-.title__network{
+.title__network__item a{
     display: flex;
-    gap: 15px;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 5px;
+}
+
+.title__network li a img{
+    width: 30px;
+    height: 30px;
 }
 
 
@@ -503,8 +488,7 @@ section.footer{
     gap: 5px;
 }
 
-/* Vamos a desafiarnos trabajando con responsividad?
-Utiliza las referencias de los breakpoints @media abajo */
+/* @media abajo */
 
 
 /*Tablet*/
@@ -648,11 +632,15 @@ Utiliza las referencias de los breakpoints @media abajo */
 /*Mobile*/
 @media (max-width: 425px) {
 
-
-
     /*Menu*/
 
     /*Titulo*/
+
+    section.title{
+        margin: 10px 25px;
+        padding: 10px 25px;
+    }
+    
     .title__div{
         flex-direction: column;
         align-items: flex-start;
@@ -685,6 +673,12 @@ Utiliza las referencias de los breakpoints @media abajo */
     }
 
     /*Sección sobre mi*/
+
+    section.about{
+        margin: 10px 25px;
+        padding: 10px 25px;
+    }
+
     .about__container{
         width: 100%;
     }
@@ -694,17 +688,35 @@ Utiliza las referencias de los breakpoints @media abajo */
     }
 
     /*Skills*/
+
+    .skills{
+        margin: 10px 25px;
+        padding: 10px 25px;
+    }
+
     .skills__line{
         flex-wrap: wrap;
          
      }
 
     /*Hobbies*/
+
+    section.hobbies{
+        margin: 10px 25px;
+        padding: 10px 25px;
+    }
+
     .hobbies__line{
         flex-wrap: wrap;
     }
     
     /*Formación Académica*/
+
+    section.academic{
+        margin: 10px 25px;
+        padding: 10px 25px;
+    }
+
     .academic__courses{
         flex-wrap: wrap;
     }
@@ -715,12 +727,20 @@ Utiliza las referencias de los breakpoints @media abajo */
     }
 
     /*Experiencia Profesional*/
+
+    section.experience{
+        margin: 10px 25px;
+        padding: 10px 25px;
+    }
+
     .experience__img{
         height: 150px;
     }
 
     /*Contacto*/
-
-    /*Footer*/
+    section.formcontato{
+        margin: 10px 25px;
+        padding: 10px 25px;
+    }
 
 }
