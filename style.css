@@ -45,9 +45,30 @@ section.menu{
 }
 
 .menu__list{
-     display: flex;
-    gap: 15px;
+    display: flex;
+    gap: 20px;
     
+}
+
+.menu__list__item a{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 5px;
+    border: #87cefa 2px solid;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.menu__list__item a:hover{
+    font-size: 18px;
+    padding: 10px;
+}
+
+
+.menu__list__item a img{
+    width: 30px;
+    height: 30px;
 }
 
 .menu__list__item__mobile{
@@ -96,8 +117,14 @@ section.title{
     align-items: center;
     gap: 20px;
     font-size: 20px;
-    margin: 10px 0;
+    margin: 30px 0;
 }
+
+.title__network__item{
+    display: flex;
+    justify-content: center;
+}
+
 
 .title__network__item a{
     display: flex;
@@ -510,6 +537,13 @@ section.footer{
         justify-content: space-between;
     }
 
+    .menu__list__item__mobile a{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        gap: 5px;
+    }
+
     /*title*/
 
     .title__profile{
@@ -532,6 +566,11 @@ section.footer{
         font-size: 15px;
         margin: 10px 0;
         gap: 10px;
+    }
+
+    .menu__list__item__mobile a img{
+        width: 30px;
+        height: 30px;
     }
 
     /*Sección About*/
@@ -633,6 +672,11 @@ section.footer{
 @media (max-width: 425px) {
 
     /*Menu*/
+    .menu__list__item__mobile a{
+        display: flex;
+        flex-direction: column;
+        
+    }
 
     /*Titulo*/
 
