@@ -263,11 +263,11 @@
                         <h3 class="formcontato__subtext">¿Quieres contactarme?</h3>
                         <h3 class="formcontato__subtext">Complete el siguiente formulario y me pondré en contacto con usted lo antes posible. </h3>
                         <form class="formcontato__form" name="form" action="https://formsubmit.co/4a8029694f398e8c00259d6277a53b49" method="POST">
-                            <input class="formcontato__input" type="text" name="nombre" placeholder="Nombre">
-                            <input class="formcontato__input" type="email" name="email" placeholder="E-mail">
-                            <input class="formcontato__input" type="text" name="asunto" placeholder="Assunto">
+                            <input id="nombre" class="formcontato__input" type="text" name="nombre" placeholder="Nombre" required>
+                            <input id="correo" class="formcontato__input" type="email" name="email" placeholder="E-mail" required>
+                            <input class="formcontato__input" type="text" name="asunto" placeholder="Assunto" required>
                             <textarea class="formcontato__textarea" rows="5" cols="40" id="mensagem" name="mensaje" placeholder="Mensaje"></textarea>
-                            <button type="submit" class="formcontato__botao">Enviar mensaje</button>
+                            <button onclick="validarForm()" type="submit" class="formcontato__botao">Enviar mensaje</button>
 
                             <input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html">
                             <input type="hidden" name="_captcha" value="false">
